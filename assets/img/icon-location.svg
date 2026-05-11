@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" role="img" aria-label="Location icon">
+  <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z" fill="rgba(91,140,255,.25)" stroke="rgba(233,238,252,.92)" stroke-width="2"/>
+  <circle cx="12" cy="10" r="2.5" fill="rgba(45,212,191,.25)" stroke="rgba(233,238,252,.92)" stroke-width="2"/>
+</svg>
+

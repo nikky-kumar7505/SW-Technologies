@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Services | SW Technologies</title>
+    <meta name="description" content="Explore SW Technologies services: Website Design, Website Development, E-Commerce Development, and SEO & Digital Marketing." />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary" data-nav>
+          <a class="brand" href="index.html" aria-label="SW Technologies home">
+            <img class="logo-img" src="assets/img/logo.svg" alt="SW Technologies logo" />
+            <span class="brand-name">SW Technologies</span>
+          </a>
+
+          <div class="nav-links" data-menu id="primary-menu">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="services.html" data-nav-link>Services</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="login.html" data-auth-when="loggedOut">Login</a>
+            <a href="register.html" class="menu-cta" data-auth-when="loggedOut">Register</a>
+            <a href="profile.html" data-auth-when="loggedIn">Profile</a>
+            <a href="#" data-logout data-auth-when="loggedIn">Logout</a>
+            <a href="admin.html" data-auth-when="admin">Admin</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="btn btn-small btn-ghost" href="contact.html">Get a Free Quote</a>
+            <a class="btn btn-small btn-ghost" href="login.html" data-auth-when="loggedOut">Login</a>
+            <a class="btn btn-small btn-primary" href="register.html" data-auth-when="loggedOut">Register</a>
+            <a class="btn btn-small btn-ghost" href="admin.html" data-auth-when="admin">Admin</a>
+            <span class="nav-user" data-auth-when="loggedIn">Hi, <b data-user-name></b></span>
+            <a class="btn btn-small btn-ghost" href="profile.html" data-auth-when="loggedIn">Profile</a>
+            <button class="btn btn-small btn-ghost" type="button" data-logout data-auth-when="loggedIn">Logout</button>
+            <button class="hamburger" type="button" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false" data-menu-toggle>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner-card">
+            <h1>Our Services</h1>
+            <div class="breadcrumbs">Home / Services</div>
+            <p class="lead" style="margin-top:12px">
+              A complete set of services to design, build, and grow your online presence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <div class="kicker">What we do</div>
+              <h2 class="h2">Professional services, clear deliverables.</h2>
+              <p class="lead">Everything you need to launch a high-performing online presence — from design to growth.</p>
+            </div>
+          </div>
+
+          <div class="grid-4">
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <i class="ri-palette-line" aria-hidden="true"></i>
+              </div>
+              <h3>Website Design</h3>
+              <p>
+                Clean, modern UI with consistent spacing, typography, and strong visual hierarchy.
+                Includes responsive layouts for mobile, tablet, and desktop.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn btn-small btn-primary" href="contact.html">Request Design</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <i class="ri-terminal-box-line" aria-hidden="true"></i>
+              </div>
+              <h3>Website Development</h3>
+              <p>
+                Fast, accessible, and maintainable builds using best practices.
+                Smooth interactions, semantic HTML, and scalable structure.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn btn-small btn-primary" href="contact.html">Start Development</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <i class="ri-shopping-bag-4-line" aria-hidden="true"></i>
+              </div>
+              <h3>E-Commerce Development</h3>
+              <p>
+                Product-focused shopping experiences designed to convert.
+                Structured catalog layout, clear CTAs, and a checkout-ready UX.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn btn-small btn-primary" href="contact.html">Build Store</a>
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="icon" aria-hidden="true">
+                <i class="ri-pulse-line" aria-hidden="true"></i>
+              </div>
+              <h3>SEO & Digital Marketing</h3>
+              <p>
+                Technical SEO basics, clean page structure, and performance improvements.
+                Guidance for content and measurable growth.
+              </p>
+              <div style="margin-top:14px">
+                <a class="btn btn-small btn-primary" href="contact.html">Improve Rankings</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="card">
+            <div class="section-head" style="margin-bottom:10px">
+              <div>
+                <div class="kicker">How we work</div>
+                <h2 class="h2">A simple, effective process.</h2>
+                <p class="lead">Discovery → Design → Build → Launch. Fast iterations and clear progress updates.</p>
+              </div>
+              <a class="btn btn-small btn-ghost" href="contact.html">Talk to us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">SW Technologies</p>
+            <p class="footer-text">
+              We build fast, modern and responsive websites tailored to your business goals.
+              From landing pages to full e-commerce builds — we ship websites that win trust.
+            </p>
+            <div class="social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.42v1.56h.05c.48-.9 1.64-1.86 3.38-1.86 3.61 0 4.28 2.38 4.28 5.48v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.78 24h20.44c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M18.9 2H22l-6.78 7.75L23.2 22h-6.4l-5.01-7.35L5.7 22H2.6l7.26-8.3L.8 2h6.56l4.53 6.7L18.9 2zm-1.12 18.1h1.71L6.41 3.83H4.57L17.78 20.1z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6zM12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm5.6-2.3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="newsletter">
+              <p class="footer-title" style="margin-top:14px">Newsletter</p>
+              <form id="newsletterForm" class="newsletter-form" novalidate>
+                <input id="newsletterEmail" name="email" type="email" placeholder="Your email address" required />
+                <button class="btn btn-small btn-primary" type="submit">Subscribe</button>
+              </form>
+              <div class="form-note" id="newsletterMsg" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-title">Links</p>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-title">Contact</p>
+            <p class="footer-text">
+              Phone: +91 90000 00000<br />
+              Email: hello@swtechnologies.example<br />
+              Address: 2nd Floor, Tech Park, Bengaluru, India
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> SW Technologies. All rights reserved.</span>
+          <span class="muted">Built with HTML • CSS • JS</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+

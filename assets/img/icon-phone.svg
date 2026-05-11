@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" role="img" aria-label="Phone icon">
+  <path d="M7 3h10v18H7z" fill="rgba(45,212,191,.18)" stroke="rgba(233,238,252,.92)" stroke-width="2"/>
+  <path d="M10 19h4" stroke="rgba(233,238,252,.92)" stroke-width="2" stroke-linecap="round"/>
+  <path d="M9 6h6" stroke="rgba(233,238,252,.92)" stroke-width="2" stroke-linecap="round"/>
+</svg>
+

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact | SW Technologies</title>
+    <meta name="description" content="Contact SW Technologies for a free quote. Get in touch via form, email, or phone." />
+    <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/img/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary" data-nav>
+          <a class="brand" href="index.html" aria-label="SW Technologies home">
+            <img class="logo-img" src="assets/img/logo.svg" alt="SW Technologies logo" />
+            <span class="brand-name">SW Technologies</span>
+          </a>
+
+          <div class="nav-links" data-menu id="primary-menu">
+            <a href="index.html" data-nav-link>Home</a>
+            <a href="about.html" data-nav-link>About</a>
+            <a href="services.html" data-nav-link>Services</a>
+            <a href="contact.html" data-nav-link>Contact</a>
+            <a href="login.html" data-auth-when="loggedOut">Login</a>
+            <a href="register.html" class="menu-cta" data-auth-when="loggedOut">Register</a>
+            <a href="profile.html" data-auth-when="loggedIn">Profile</a>
+            <a href="#" data-logout data-auth-when="loggedIn">Logout</a>
+            <a href="admin.html" data-auth-when="admin">Admin</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="btn btn-small btn-ghost" href="contact.html">Get a Free Quote</a>
+            <a class="btn btn-small btn-ghost" href="login.html" data-auth-when="loggedOut">Login</a>
+            <a class="btn btn-small btn-primary" href="register.html" data-auth-when="loggedOut">Register</a>
+            <a class="btn btn-small btn-ghost" href="admin.html" data-auth-when="admin">Admin</a>
+            <span class="nav-user" data-auth-when="loggedIn">Hi, <b data-user-name></b></span>
+            <a class="btn btn-small btn-ghost" href="profile.html" data-auth-when="loggedIn">Profile</a>
+            <button class="btn btn-small btn-ghost" type="button" data-logout data-auth-when="loggedIn">Logout</button>
+            <button class="hamburger" type="button" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false" data-menu-toggle>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="banner">
+        <div class="container">
+          <div class="banner-card">
+            <h1>Contact Us</h1>
+            <div class="breadcrumbs">Home / Contact</div>
+            <p class="lead" style="margin-top:12px">
+              Tell us about your project — we’ll reply with next steps and a free quote.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="split">
+            <div class="card">
+              <div class="kicker">Contact form</div>
+              <h2 class="h2" style="margin-top:10px">Get a Free Quote</h2>
+              <p class="lead">All fields are required. Validation happens on the server after submission.</p>
+
+              <form id="contactForm" novalidate>
+                <div class="field">
+                  <label for="name">Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" placeholder="Your full name" />
+                  <div class="error" id="err-name" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                  <div class="error" id="err-email" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 90000 00000" />
+                  <div class="error" id="err-phone" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="subject">Subject</label>
+                  <input id="subject" name="subject" type="text" placeholder="Website redesign / New website / SEO..." />
+                  <div class="error" id="err-subject" aria-live="polite"></div>
+                </div>
+
+                <div class="field">
+                  <label for="message">Message</label>
+                  <textarea id="message" name="message" placeholder="Tell us what you want to build and any timeline/budget details."></textarea>
+                  <div class="error" id="err-message" aria-live="polite"></div>
+                </div>
+
+                <button class="btn btn-primary" type="submit">Send Message</button>
+                <div class="form-note" id="formSuccess" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+
+            <aside>
+              <div class="card">
+                <div class="kicker">Contact details</div>
+                <h2 class="h2" style="margin-top:10px">SW Technologies</h2>
+                <p class="lead">You can also reach us directly using the details below.</p>
+
+                <div class="contact-list" style="margin-top:12px">
+                  <div class="contact-item">
+                    <div class="contact-item-row">
+                      <img class="contact-icon" src="assets/img/icon-location.svg" alt="" aria-hidden="true" />
+                      <div>
+                        <b>Address</b>
+                        <span>2nd Floor, Tech Park, Bengaluru, India</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-item-row">
+                      <img class="contact-icon" src="assets/img/icon-phone.svg" alt="" aria-hidden="true" />
+                      <div>
+                        <b>Phone</b>
+                        <span>+91 90000 00000</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contact-item">
+                    <div class="contact-item-row">
+                      <img class="contact-icon" src="assets/img/icon-mail.svg" alt="" aria-hidden="true" />
+                      <div>
+                        <b>Email</b>
+                        <span>hello@swtechnologies.example</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <iframe
+                class="map"
+                title="SW Technologies location map"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.5092666305467!2d77.59456241519812!3d12.971598390855814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c0f4b3b5%3A0x1b0c0e2c8f3f1c2a!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715180000000">
+              </iframe>
+            </aside>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <p class="footer-title">SW Technologies</p>
+            <p class="footer-text">
+              We build fast, modern and responsive websites tailored to your business goals.
+              From landing pages to full e-commerce builds — we ship websites that win trust.
+            </p>
+            <div class="social" aria-label="Social links">
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.05-1.86-3.05-1.86 0-2.15 1.45-2.15 2.95v5.67H9.32V9h3.42v1.56h.05c.48-.9 1.64-1.86 3.38-1.86 3.61 0 4.28 2.38 4.28 5.48v6.27zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.78C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.78 24h20.44c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M18.9 2H22l-6.78 7.75L23.2 22h-6.4l-5.01-7.35L5.7 22H2.6l7.26-8.3L.8 2h6.56l4.53 6.7L18.9 2zm-1.12 18.1h1.71L6.41 3.83H4.57L17.78 20.1z"/>
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+                  <path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm10 2H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-5 4.2a3.8 3.8 0 1 1 0 7.6 3.8 3.8 0 0 1 0-7.6zM12 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm5.6-2.3a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="newsletter">
+              <p class="footer-title" style="margin-top:14px">Newsletter</p>
+              <form id="newsletterForm" class="newsletter-form" novalidate>
+                <input id="newsletterEmail" name="email" type="email" placeholder="Your email address" required />
+                <button class="btn btn-small btn-primary" type="submit">Subscribe</button>
+              </form>
+              <div class="form-note" id="newsletterMsg" role="status" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-title">Links</p>
+            <div class="footer-links">
+              <a href="index.html">Home</a>
+              <a href="about.html">About Us</a>
+              <a href="services.html">Services</a>
+            </div>
+          </div>
+
+          <div>
+            <p class="footer-title">Contact</p>
+            <p class="footer-text">
+              Phone: +91 90000 00000<br />
+              Email: hello@swtechnologies.example<br />
+              Address: 2nd Floor, Tech Park, Bengaluru, India
+            </p>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <span>© <span id="year"></span> SW Technologies. All rights reserved.</span>
+          <span class="muted">Built with HTML • CSS • JS</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
+
