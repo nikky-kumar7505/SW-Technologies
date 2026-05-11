@@ -4,20 +4,24 @@
 
 **A premium-looking, responsive multi-page website built with HTML, CSS & vanilla JavaScript.**
 
-**Live site**: `https://nikky-kumar7505.github.io/SW-Technologies/`
+**Live site (GitHub Pages)**: [https://nikky-kumar7505.github.io/SW-Technologies/](https://nikky-kumar7505.github.io/SW-Technologies/)
 
 <p>
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000" />
-  <img alt="Netlify ready" src="https://img.shields.io/badge/Deploy-Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" />
+  <img alt="GitHub Pages" src="https://img.shields.io/badge/Deploy-GitHub%20Pages-222?style=for-the-badge&logo=github&logoColor=white" />
 </p>
 
 <p>
-  <a href="https://jocular-madeleine-5f5699.netlify.app/" target="_blank" rel="noreferrer">
+  <a href="https://nikky-kumar7505.github.io/SW-Technologies/" target="_blank" rel="noreferrer">
     <img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Open%20Site-111827?style=for-the-badge&logo=googlechrome&logoColor=white" />
   </a>
 </p>
+
+### Admin panel
+
+On the **live site** above: click **Login** → sign in with **`ADMIN_EMAIL`** and **`ADMIN_PASSWORD`** from **`Backend/.env`** (typically **lines 5–7**; defaults: `admin@swtech.com` / `Admin@12345`) → then use **Admin** in the navbar or open **`admin.html`** when logged in as admin.
 
 </div>
 
@@ -91,9 +95,13 @@ python3 -m http.server 5173
 
 Then open `http://localhost:5173` in your browser.
 
+## 🌍 Deploy (GitHub Pages — live)
+
+This repo’s UI is published at **[https://nikky-kumar7505.github.io/SW-Technologies/](https://nikky-kumar7505.github.io/SW-Technologies/)** (static files from this `Frontend/` layout; no build step). Point `assets/js/config.js` at your live API (e.g. Render).
+
 ## 🌍 Deploy to Netlify
 
-This project deploys as a **static site** (no build step).
+This project also works as a **static site** on Netlify (no build step).
 
 ### Option 1: Drag & drop (fastest) 🟢
 
@@ -122,19 +130,14 @@ If Chrome shows a red interstitial, that is usually **Google Safe Browsing** (no
 What helps:
 
 1. Redeploy so `_headers` is live, then try again in an incognito window.
-2. Confirm the exact URL is your real Netlify HTTPS site.
+2. Confirm the exact URL is your real HTTPS site (GitHub Pages or Netlify).
 3. Check the URL in [Google Safe Browsing transparency](https://transparencyreport.google.com/safe-browsing/search) (or Search Console → Security) and **request a review** if it’s a false positive.
 
-## 🔐 Admin panel access (Full‑stack mode)
+## 🔐 Admin panel access
 
-When you run the project as a full‑stack app (backend serves this frontend), you can access:
+**Live (GitHub Pages):** [https://nikky-kumar7505.github.io/SW-Technologies/](https://nikky-kumar7505.github.io/SW-Technologies/) → **Login** → use **`ADMIN_EMAIL`** / **`ADMIN_PASSWORD`** from **`Backend/.env`** (lines **5–7**; defaults: `admin@swtech.com` / `Admin@12345`) → **Admin** or `admin.html`.
 
-- Admin page: `http://localhost:5001/login.html`
-
-Login using the seeded admin credentials (set in `Backend/.env`, defaults in `Backend/.env.example`):
-
-- `ADMIN_EMAIL`: `admin@swtech.com`
-- `ADMIN_PASSWORD`: `Admin@12345`
+**Local full-stack** (backend serves this folder): open `http://localhost:5001/login.html` (or your `PORT`), same credentials from `Backend/.env`.
 
 ---
 
