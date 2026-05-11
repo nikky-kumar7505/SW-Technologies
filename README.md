@@ -113,6 +113,17 @@ This project deploys as a **static site** (no build step).
 ## ✅ Notes
 
 - Keep asset paths relative (e.g. `assets/css/style.css`, `assets/js/main.js`) so they work locally and on Netlify.
+- **Security headers (Netlify):** this folder includes `_headers` so Netlify sends `X-Frame-Options`, `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and HSTS on HTTPS. Redeploy after changing it.
+
+### Chrome “Dangerous site” / Safe Browsing
+
+If Chrome shows a red interstitial, that is usually **Google Safe Browsing** (not a missing line in your HTML). **Do not** add random third‑party `<script src="http://...">` tags to “fix” it — that makes things worse.
+
+What helps:
+
+1. Redeploy so `_headers` is live, then try again in an incognito window.
+2. Confirm the exact URL is your real Netlify HTTPS site.
+3. Check the URL in [Google Safe Browsing transparency](https://transparencyreport.google.com/safe-browsing/search) (or Search Console → Security) and **request a review** if it’s a false positive.
 
 ## 🔐 Admin panel access (Full‑stack mode)
 
