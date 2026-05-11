@@ -19,9 +19,15 @@
   </a>
 </p>
 
-### Admin panel
+### To access admin panel
 
-On the **live site** above: click **Login** → sign in with **`ADMIN_EMAIL`** and **`ADMIN_PASSWORD`** from **`Backend/.env`** (typically **lines 5–7**; defaults: `admin@swtech.com` / `Admin@12345`) → then use **Admin** in the navbar or open **`admin.html`** when logged in as admin.
+1. Click **Login** in the navbar.  
+2. Use these credentials:
+
+| Field | Value |
+|--------|--------|
+| **Email** | `admin@swtech.com` |
+| **Password** | `Admin@12345` |
 
 </div>
 
@@ -132,14 +138,6 @@ What helps:
 1. Redeploy so `_headers` is live, then try again in an incognito window.
 2. Confirm the exact URL is your real HTTPS site (GitHub Pages or Netlify).
 3. Check the URL in [Google Safe Browsing transparency](https://transparencyreport.google.com/safe-browsing/search) (or Search Console → Security) and **request a review** if it’s a false positive.
-
-## 🔐 Admin panel access
-
-**Live (GitHub Pages):** [https://nikky-kumar7505.github.io/SW-Technologies/](https://nikky-kumar7505.github.io/SW-Technologies/) → **Login** → use **`ADMIN_EMAIL`** / **`ADMIN_PASSWORD`** from **`Backend/.env`** (lines **5–7**; defaults: `admin@swtech.com` / `Admin@12345`) → **Admin** or `admin.html`.
-
-**Local full-stack** (backend serves this folder): open `http://localhost:5001/login.html` (or your `PORT`), same credentials from `Backend/.env`.
-
----
 
 ## 📄 License
 
