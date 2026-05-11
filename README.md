@@ -4,7 +4,7 @@
 
 **A premium-looking, responsive multi-page website built with HTML, CSS & vanilla JavaScript.**
 
-**Live site**: `https://jocular-madeleine-5f5699.netlify.app/`
+**Live site**: `https://nikky-kumar7505.github.io/SW-Technologies/`
 
 <p>
   <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
